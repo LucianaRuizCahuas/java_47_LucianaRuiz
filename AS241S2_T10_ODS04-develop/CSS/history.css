@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    background-color: #252627;
+}
+h1 {
+    display: inline;
+    color: white;
+    padding: 15px 55px;
+    background-color: #252627;
+    border-radius: 40px;
+}
+footer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #252627;
+    font-size: 30px;
+    padding: 50px 0 300px 0;
+    text-decoration: none;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+footer .footer-logo{
+    display: inline;
+    width: 30%;
+}
+footer .footer-logo img {
+    height: 150px;
+}
+footer .footer-datos{
+    display: inline;
+    width: 30%;
+}
+footer .footer-datos ol ul {
+    margin-bottom: 30px;
+}
+footer .footer-datos ol ul a {
+    text-decoration: none;
+    color: white;
+}
+footer .footer-contacto{
+    display: inline;
+    width: 30%;
+    text-align: center;
+    font-size: 50px;
+}
+footer .footer-contacto a {
+    text-decoration: none;
+    color: white;
+}
+footer .footer-line {
+    width: 85%;
+    height: 1px;
+    position: absolute;
+    top: 400px;
+    background-color: white;
+}
+footer .box-redes {
+    position: absolute;
+    top: 450px;
+}
+footer .box-redes a {
+    margin-left: 150px;
+}
+.box-loader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    display: none;
+}
+.loader {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+}
+.loader-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #F55B5B;
+    border-left-color: transparent;
+    border-bottom: none;
+    border-radius: 50%;
+    animation: loader_1 1s cubic-bezier(.17,.62,.87,.36) infinite;
+}
+.loader-2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 4px solid #5892AB;
+    border-right-color: transparent;
+    border-top: none;
+    border-radius: 50%;
+    left: calc(50% - 30px);
+    top: calc(50% - 30px);
+    animation: loader_2 1s cubic-bezier(.17,.62,.87,.36) infinite;
+}
+@keyframes loader_1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes loader_2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+#navbar{
+    overflow: hidden;
+    background-color: #252627;
+    padding: 20px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+#navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+#navbar #logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+#navbar a:hover {
+    background-color: #454647;
+    color: white;
+}
+#navbar a.active {
+    background-color: #A1B2BE;
+    color: black;
+}
+#navbar-right {
+    float: right;
+    margin-right: 30px;
+}
+#navbar-right a{
+    margin-top: 20px;
+}
+.space-navbar {
+    background-color: #252627;
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+.tittle{
+    display: block;
+    text-align: center;
+}
+.history{
+    background-image: url(/resources/img/fondo-history.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 40px;
+    background-size: cover;
+    height: 900px;
+    align-items: center;
+    justify-content: center;
+}
+.history .box-history{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.history .box-history p {
+    background-color: #98d2ebc5;
+    padding: 40px;
+    width: 900px;
+    height: 600px;
+    font-size: 30px;
+    text-align: justify;
+}
+.homeButton{
+padding : '10px 20px';
+font-Size : '16px';
+background-Color: '#007BFF';
+color : 'white';
+border : 'none';
+border-Radius : '5px';
+cursor : 'pointer';
+}
